@@ -1,0 +1,96 @@
+.header{
+    background-image: url(/assets/images/header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    .nav-bar{
+        padding: 85px 0 120px;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            width: 300px;
+        }
+        .contact{
+            display: flex;
+            width: 530px;
+            justify-content: space-between;
+            a{
+                font-size: 25px;
+                font-weight: 500;
+                color: #4B23BD;
+            }
+            img{
+                width: 40px;
+                transition: .3s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .wrapper{
+        display: flex;
+        .wrapper-text{
+            padding: 20px 0 0 80px;
+            width: 50%;
+            h1{
+                font-weight: 800;
+                font-size: 60px;
+                color: #082E9B;
+            }
+            .list{
+                font-weight: 500;
+                font-size: 30px;
+                color: #082E9B;
+                li{
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        top: -15px;
+                        left: -15px;
+                        content: "\2022";
+                        color: red;                    display: inline-block; 
+                        margin-left: -1em;
+                        font-size: 50px;
+                    }
+                }
+                .orange::before{
+                    color: #FF7F00;   
+                }
+                .blue::before{
+                    color: #00BDFF;   
+                }
+                .pur::before{
+                    color: #C63BAF;   
+                }
+            }
+            .wrapper-link{
+                display: block;
+                margin-top: 150px;
+                font-weight: 800;
+                font-size: 25px;
+                color: #082E9B;
+                width: 474px;
+                padding: 24px 60px;
+                border: 1px solid #A69FA3;
+                box-sizing: border-box;
+                border-radius: 60px;
+                text-align: center;
+                display: flex;
+                text-align: left;
+                transform: translateX(-50px);
+                img{
+                    width: 20px;
+
+                }
+            }
+        }
+        .wrapper-img{
+            width: 50%;
+            img{
+                transform: translateX(100px);
+            }
+        }
+        
+    }
+}
