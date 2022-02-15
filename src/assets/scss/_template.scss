@@ -46,7 +46,7 @@ h6 {
 
 h1 {
     font-size: 50px;
-
+    font-family: "M PLUS Rounded 1c", sans-serif;
     @include laptop {
         font-size: 42px;
     }
@@ -99,4 +99,7 @@ button {
 .container{
     width: 1188px;
     margin: 0 auto;
+    @include mobile{
+        width: 375px;
+    }
 }
