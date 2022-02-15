@@ -591,6 +591,10 @@
         background: rgba(255, 255, 255, 0.15);
         border: 1.5px solid rgba(255, 255, 255, 0.4);
         backdrop-filter: blur(43px);
+        @include mobile{
+            width: 90%;
+            padding: 25px 20px;
+        }
         .form-header{
             font-weight: 800;
             font-size: 30px;
@@ -605,6 +609,10 @@
             border-radius: 30px;
             padding: 17px 25px;
             color: #fff;
+            @include mobile{
+                margin-top: 10px;
+                padding: 7px 20px;
+            }
             &::placeholder {
                 color: #fff;
             }
@@ -618,6 +626,11 @@
             width: 100%;
             padding: 17px 25px;
             margin-top: 80px;
+            @include mobile{
+                padding: 7px;
+                font-size: 12px;
+                margin-top: 20px;
+            }
         }
     }
 }

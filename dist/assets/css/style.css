@@ -831,6 +831,10 @@ button {
     background: rgba(255, 255, 255, 0.15);
     border: 1.5px solid rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(43px); }
+    @media screen and (max-width: 576px) {
+      .form form {
+        width: 90%;
+        padding: 25px 20px; } }
     .form form .form-header {
       font-weight: 800;
       font-size: 30px;
@@ -844,6 +848,10 @@ button {
       border-radius: 30px;
       padding: 17px 25px;
       color: #fff; }
+      @media screen and (max-width: 576px) {
+        .form form input {
+          margin-top: 10px;
+          padding: 7px 20px; } }
       .form form input::placeholder {
         color: #fff; }
     .form form button {
@@ -855,6 +863,11 @@ button {
       width: 100%;
       padding: 17px 25px;
       margin-top: 80px; }
+      @media screen and (max-width: 576px) {
+        .form form button {
+          padding: 7px;
+          font-size: 12px;
+          margin-top: 20px; } }
 
 .contact {
   position: relative; }
