@@ -1,5 +1,8 @@
 .compare{
     margin-top: 120px;
+    @include mobile{
+        display: none;
+    }
     .compare-content{
         display: flex;
         position: relative;
@@ -139,6 +142,107 @@
         position: absolute;
     }
 }
+.compare-mob{
+    h2{
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .compare-text{
+        padding: 15px 60px;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        h4{
+            font-weight: 800;
+            font-size: 12px;
+            
+        }
+        p{
+            padding: 0;
+            font-weight: 500;
+            font-size: 12px;
+            color: #151414;
+        }
+    }
+    .compare-school{
+        background-color: #FFCED4;
+        padding: 45px 0;
+        position: relative;    
+        .school-content{
+            width: 305px;
+            margin: 0 auto;
+            img{
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 170px;
+            }
+        }
+        .compare-list{
+            font-weight: 800;
+            font-size: 10px;
+            display: flex;
+            padding: 12px 70px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #131212;
+            width: 106px;
+            height: 35px;
+            background: #FFFFFF;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 50px;
+            margin-bottom: 70px;
+            line-height: 1;
+        }
+        h4{
+            color: #E17C1B;
+        }
+    }
+    .compare-we{
+        background-color: #68D9FF;
+        padding: 45px 0; 
+        position: relative;   
+        .we-content{
+            width: 305px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            img{
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 190px;
+            }
+        }
+        .compare-list{
+            font-weight: 800;
+            font-size: 10px;
+            display: flex;
+            padding: 12px 70px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #131212;
+            width: 106px;
+            height: 35px;
+            background: #FFFFFF;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 50px;
+            margin-bottom: 70px;
+            line-height: 1;
+        }
+        h4{
+            color: #40B5BB;
+        }
+    }
+}
 .main{
     background-image: url(/assets/images/color-bg.svg);
     background-repeat: no-repeat;
@@ -209,15 +313,23 @@
             text-align: center;
         }
         .advantage-list{
-            margin-top: 110px;
+            margin: 110px auto;
             width: 1000px;
             display: flex;
             justify-content: space-between;
+            @include mobile{
+                flex-direction: column;
+                width: 100%;
+            }
             .advantage-card{
                 width: 160px;
+                @include mobile{
+                    margin: 40px auto;
+                }
                 img{
                     width: 160px;
                     height: 160px;
+                    margin-bottom: 30px;
                 }
                 h3{
                     font-family: Montserrat;
