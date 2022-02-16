@@ -2,7 +2,11 @@
     background-image: url(/assets/images/header-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: top right;
+    @include mobile{
+        background-position: top center;
+        background-size: cover;
+    }
     .nav-bar{
         padding: 85px 0 120px;
         display: flex;
@@ -35,19 +39,23 @@
         display: flex;
         @include mobile{
             flex-direction: column;
+            padding-bottom: 50px;
         }
         .wrapper-text{
             padding: 20px 0 0 80px;
             width: 50%;
             @include mobile{
                 width: 100%;
+                
             }
             h1{
                 font-weight: 800;
                 font-size: 60px;
                 color: #082E9B;
+                width: 280px;
                 @include mobile{
                     font-size: 35px;
+                    transform: translateX(-50px);
                 }
             }
             .list{

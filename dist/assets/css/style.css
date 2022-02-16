@@ -306,7 +306,11 @@ button {
   background-image: url(/assets/images/header-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right; }
+  background-position: top right; }
+  @media screen and (max-width: 576px) {
+    .header {
+      background-position: top center;
+      background-size: cover; } }
   .header .nav-bar {
     padding: 85px 0 120px;
     display: flex;
@@ -333,7 +337,8 @@ button {
     display: flex; }
     @media screen and (max-width: 576px) {
       .header .wrapper {
-        flex-direction: column; } }
+        flex-direction: column;
+        padding-bottom: 50px; } }
     .header .wrapper .wrapper-text {
       padding: 20px 0 0 80px;
       width: 50%; }
@@ -343,10 +348,12 @@ button {
       .header .wrapper .wrapper-text h1 {
         font-weight: 800;
         font-size: 60px;
-        color: #082E9B; }
+        color: #082E9B;
+        width: 280px; }
         @media screen and (max-width: 576px) {
           .header .wrapper .wrapper-text h1 {
-            font-size: 35px; } }
+            font-size: 35px;
+            transform: translateX(-50px); } }
       .header .wrapper .wrapper-text .list {
         font-weight: 500;
         font-size: 30px;
@@ -640,6 +647,9 @@ button {
   background-size: cover;
   background-position-y: -1100px;
   padding-top: 122px; }
+  @media screen and (max-width: 576px) {
+    .main {
+      padding-top: 40px; } }
   .main h2 {
     text-transform: uppercase;
     font-weight: 800;
@@ -654,7 +664,9 @@ button {
       .main .about {
         padding-top: 50px;
         flex-direction: column-reverse;
-        position: relative; } }
+        position: relative;
+        border-radius: 30px;
+        padding-top: 40px; } }
     .main .about .about-img {
       width: 570px; }
       @media screen and (max-width: 576px) {
@@ -676,6 +688,9 @@ button {
       font-weight: 500;
       font-size: 20px;
       color: #1C1A1A; }
+      @media screen and (max-width: 576px) {
+        .main .about p {
+          font-size: 13px; } }
     .main .about .slogan {
       font-weight: 800;
       font-size: 30px;
@@ -688,9 +703,13 @@ button {
       .main .about h2 {
         text-align: center; } }
   .main .advantage {
-    margin-top: 260px; }
+    margin-top: 180px; }
     .main .advantage h2 {
       text-align: center; }
+      @media screen and (max-width: 576px) {
+        .main .advantage h2 {
+          margin-top: 280px;
+          font-size: 23px; } }
     .main .advantage .advantage-list {
       margin: 110px auto;
       width: 1000px;
@@ -699,7 +718,8 @@ button {
       @media screen and (max-width: 576px) {
         .main .advantage .advantage-list {
           flex-direction: column;
-          width: 100%; } }
+          width: 100%;
+          margin: 60px auto; } }
       .main .advantage .advantage-list .advantage-card {
         width: 160px; }
         @media screen and (max-width: 576px) {
@@ -902,7 +922,7 @@ button {
         font-size: 23px; }
     .main .courses-mob .try {
       display: block;
-      margin-top: 15px;
+      margin-top: 30px;
       padding: 16px 30px;
       width: 100%;
       font-weight: 800;
@@ -913,7 +933,9 @@ button {
       border-radius: 18px; }
     .main .courses-mob .courses-mob__card {
       padding: 25px;
-      border-radius: 18px; }
+      border-radius: 18px;
+      height: 490px;
+      position: relative; }
       .main .courses-mob .courses-mob__card .card-title {
         display: flex;
         align-items: center;
@@ -942,18 +964,23 @@ button {
           line-height: 130%; }
       .main .courses-mob .courses-mob__card .couse-price {
         margin-top: 40px;
-        width: 100%;
+        width: 230px;
+        height: 74px;
         box-sizing: border-box;
         border-radius: 10px;
         text-align: center;
-        padding: 13px;
-        background-color: #FFFFFF; }
+        padding: 9px;
+        background-color: #FFFFFF;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%); }
         .main .courses-mob .courses-mob__card .couse-price p {
           padding: 0;
           margin: 0;
           font-weight: 800; }
         .main .courses-mob .courses-mob__card .couse-price .price {
-          font-size: 33px; }
+          font-size: 23px; }
         .main .courses-mob .courses-mob__card .couse-price .currency {
           font-size: 13px; }
     .main .courses-mob .mob-card-1 {
@@ -1116,7 +1143,7 @@ button {
       z-index: 1;
       transform: scale(1.1); }
   .main .teacher-mob {
-    margin-top: 30px;
+    margin-top: 40px;
     background: #FFFFFF;
     border-radius: 30px;
     padding: 40px 0;

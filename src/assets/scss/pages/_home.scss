@@ -253,6 +253,9 @@
     background-size: cover;
     background-position-y: -1100px;
     padding-top: 122px;
+    @include mobile{
+        padding-top: 40px;
+    }
     h2{
         text-transform: uppercase;
         font-weight: 800;
@@ -268,6 +271,8 @@
             padding-top: 50px;
             flex-direction: column-reverse;
             position: relative;
+            border-radius: 30px;
+            padding-top: 40px;
         }
         .about-img{
             width: 570px;
@@ -287,6 +292,7 @@
             @include mobile{
                 width: 100%;
                 padding: 25px 25px 60px;
+                
             }
         }
 
@@ -294,6 +300,9 @@
             font-weight: 500;
             font-size: 20px;
             color: #1C1A1A;
+            @include mobile{
+                font-size: 13px;
+            }
         }
         .slogan{
             font-weight: 800;
@@ -312,9 +321,13 @@
         
     }
     .advantage{
-        margin-top: 260px;
+        margin-top: 180px;
         h2{
             text-align: center;
+            @include mobile{
+                margin-top: 280px;
+                font-size: 23px;
+            }
         }
         .advantage-list{
             margin: 110px auto;
@@ -324,6 +337,7 @@
             @include mobile{
                 flex-direction: column;
                 width: 100%;
+                margin: 60px auto;
             }
             .advantage-card{
                 width: 160px;
@@ -632,6 +646,7 @@
             margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: (-5px 5px 10px rgba(0, 0, 0, 0.15));;
+
             h2{
                 margin: 0;
                 font-size: 23px;
@@ -639,7 +654,7 @@
         }
         .try{
             display: block;
-            margin-top: 15px;
+            margin-top: 30px;
             padding: 16px 30px;
             width: 100%;
             font-weight: 800;
@@ -652,6 +667,8 @@
         .courses-mob__card{
             padding: 25px;  
             border-radius: 18px;
+            height: 490px;
+            position: relative;
             .card-title{
                 display: flex;
                 align-items: center;
@@ -687,19 +704,24 @@
             }
             .couse-price{
                 margin-top: 40px;
-                width: 100%;
+                width: 230px;
+                height: 74px;
                 box-sizing: border-box;
                 border-radius: 10px;
                 text-align: center;
-                padding: 13px;
+                padding: 9px;
                 background-color: #FFFFFF;;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
                 p{
                     padding: 0;
                     margin: 0;
                     font-weight: 800;
                 }
                 .price{
-                    font-size: 33px;
+                    font-size: 23px;
                 }
                 .currency{
                     font-size: 13px;
@@ -947,7 +969,7 @@
         }
     }
     .teacher-mob{
-        margin-top: 30px;
+        margin-top: 40px;
         background: #FFFFFF;
         border-radius: 30px;
         padding: 40px 0;
