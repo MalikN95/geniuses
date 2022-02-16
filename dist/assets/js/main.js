@@ -1,0 +1,1 @@
+$(document).ready((function(){$("#page-preloader").fadeOut(1e3);new Swiper(".courses-mob",{spaceBetween:15}),new Swiper(".teacher-mob",{spaceBetween:15,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})}));

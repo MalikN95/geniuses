@@ -1,6 +1,7 @@
 html,
 body {
     font-family: $font;
+    overflow-x: hidden;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -91,6 +92,63 @@ button {
         outline: none;
         border: none;
     }
+}
+
+@font-face {
+    font-family: "M PLUS Rounded 1c";
+    src: url(/assets/fonts/MPLUSRounded1c-ExtraBold.woff2),
+      url(/assets/fonts/MPLUSRounded1c-ExtraBold.woff);
+      font-weight: 800;
+      font-display: swap;
+      font-style: normal;
+}
+@font-face {
+    font-family: "M PLUS Rounded 1c";
+    src: url(/assets/fonts/MPLUSRounded1c-Medium.woff2),
+      url(/assets/fonts/MPLUSRounded1c-Medium.woff);
+      font-weight: 500;
+      font-display: swap;
+      font-style: normal;
+}
+@font-face {
+    font-family: "M PLUS Rounded 1c";
+    src: url(/assets/fonts/MPLUSRounded1c-Black.woff2),
+      url(/assets/fonts/MPLUSRounded1c-Black.woff);
+      font-weight: 900;
+      font-display: swap;
+      font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat-Bold.woff2),
+      url(/assets/fonts/Montserrat-Bold.woff);
+      font-weight: 700;
+      font-display: swap;
+      font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat-Medium.woff2),
+      url(/assets/fonts/Montserrat-Medium.woff);
+      font-weight: 500;
+      font-display: swap;
+      font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat-Regular.woff2),
+      url(/assets/fonts/Montserrat-Regular.woff);
+      font-weight: 400;
+      font-display: swap;
+      font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat-SemiBold.woff2),
+      url(/assets/fonts/Montserrat-SemiBold.woff);
+      font-weight: 600;
+      font-display: swap;
+      font-style: normal;
 }
 
 .svg-icon {

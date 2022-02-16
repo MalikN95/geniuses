@@ -45,7 +45,7 @@
         background-color: #68D9FF;
     }
     .compare-title{
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-weight: bold;
         font-size: 30px;
         color: #000000;
@@ -345,6 +345,9 @@
         margin-top: 180px;
         display: flex;
         flex-wrap: wrap;
+        @include mobile{
+            display: none;
+        }
         .header-card{
             background: #FFFFFF;
             display: flex;
@@ -521,8 +524,217 @@
             }
         }
     }
+    .courses-mob{
+        display: none;
+        @include mobile{
+            display: block;
+        }
+        .header-card{
+            background: #FFFFFF;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;  
+            padding: 116px 0;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: (-5px 5px 10px rgba(0, 0, 0, 0.15));;
+            h2{
+                margin: 0;
+                font-size: 23px;
+            }     
+        }
+        .try{
+            display: block;
+            margin-top: 15px;
+            padding: 16px 30px;
+            width: 100%;
+            font-weight: 800;
+            font-size: 15px;
+            text-align: center;
+            color: #082E9B;
+            background: #FFFFFF;
+            border-radius: 18px;
+        }
+        .courses-mob__card{
+            padding: 25px;  
+            border-radius: 18px;
+            .card-title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 25px;
+                h3{
+                    font-weight: 800;
+                    font-size: 15px;
+                    color: #FCFCFC;
+                    text-transform: uppercase;
+                    text-align: left;
+                }
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .card-text{
+                color: #fff;
+                text-align: left;
+                font-family: Montserrat, sans-serif;
+                font-size: 12px;
+                h4{
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                p{
+                    font-weight: 400;
+                    line-height: 130%;
+                }
+                
+            }
+            .couse-price{
+                margin-top: 40px;
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 10px;
+                text-align: center;
+                padding: 13px;
+                background-color: #FFFFFF;;
+                p{
+                    padding: 0;
+                    margin: 0;
+                    font-weight: 800;
+                }
+                .price{
+                    font-size: 33px;
+                }
+                .currency{
+                    font-size: 13px;
+                }
+            }
+
+        }
+        .mob-card-1{
+            background: linear-gradient(180deg, #0C853C 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                    color: #0C853C;
+                }
+            }
+        }
+        .mob-card-2{
+            background: linear-gradient(180deg, #F78928 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                    color: #ED7E1A;
+                }
+            }
+        }
+        .mob-card-3{
+            background: linear-gradient(180deg, #34781D 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                   color: #34781D;
+                }
+            }
+        }
+        .mob-card-4{
+            background: linear-gradient(180deg, #7E8219 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                   color: #696C20;
+                }
+            }
+        }
+        .mob-card-5{
+            background: linear-gradient(180deg, #8F6300 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                    color: #835D09;
+                }
+            }
+        }
+        .mob-card-6{
+            background: linear-gradient(180deg, #8F3299 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                    color: #85398D;
+                }
+            }
+        }
+        .mob-card-7{
+            background: linear-gradient(180deg, #1227C6 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                    color: #172AB9;
+                }
+            }
+        }
+        .mob-card-8{
+            background: linear-gradient(180deg, #8D2400 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                  color: #8D2400;
+                }
+            }
+        }
+        .mob-card-9{
+            background: linear-gradient(180deg, #129ABC 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                  color: #157A93;
+                }
+            }
+        }
+        .mob-card-9{
+            background: linear-gradient(180deg, #1945C2 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                  color: #2345A6;
+                }
+            }
+        }
+        .mob-card-10{
+            background: linear-gradient(180deg, #1945C2 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                  color: #2345A6;
+                }
+            }
+        }
+        .mob-card-11{
+            background: linear-gradient(180deg, #2047D1 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                  color: #284AC2;
+                }
+            }
+        }
+        .mob-card-12{
+            background: linear-gradient(180deg, #880019 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                  color: #880019;
+                }
+            }
+        }
+        .mob-card-13{  
+            background: linear-gradient(180deg, #2E95BC 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            .couse-price{
+                p{
+                  color: #1D6B88;
+                }
+            }
+        }
+        .swiper-slide{
+            background: none;
+        }
+    }
     .teachers{
         position: relative;
+        @include mobile{
+            display: none;
+        }
         .wh-bg{
             background: #FFFFFF;
             border-radius: 50px;
@@ -632,14 +844,80 @@
             z-index: 1;
             transform: scale(1.1);
         }
+        .teacher-card-5::after{
+            content: url(/assets/images/tc-bg5.svg);
+            position: absolute;
+            top: 60px;
+            left: -80px;
+            z-index: 1;
+            transform: scale(1.1);
+        }
     }
-    .teacher-card-5::after{
-        content: url(/assets/images/tc-bg5.svg);
-        position: absolute;
-        top: 60px;
-        left: -80px;
-        z-index: 1;
-        transform: scale(1.1);
+    .teacher-mob{
+        margin-top: 30px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        padding: 40px 0;
+        overflow: hidden;
+        position: relative;
+        .swiper-slide{
+            background: none;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            top: 22%;
+            background-color: #F0E3EC;
+            padding: 12px;
+            &::after{
+                width: 20px;
+                height: 20px;
+                content: url(/assets/images/icons/arrow-down-black.svg);
+                background-image: none;
+            }
+        }
+        .swiper-button-next{
+            right: 40px;
+        }
+        .swiper-button-prev{
+            left: 40px;
+        }
+        h2{
+            font-size: 23px;
+            text-align: center;
+        }
+        .teacher-mob__card{
+            .card-title{
+                position: relative;
+                img{
+                    width: 95px;
+                    height: 95px;
+                }
+                h3{
+                    margin: 17px auto;
+                    width: 100px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+            .card-text{
+                text-align: left;
+                padding: 10px;
+                font-size: 14px;
+                font-family: "Montserrat";
+                h4{
+                    font-weight: bold;
+                }
+                p{
+                    font-weight: 500;
+                }
+            }
+        }
+        .card-1 .card-title{
+            background-image: url(/assets/images/tc-bg.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
     }
     .review{
         margin: 250px auto 0;

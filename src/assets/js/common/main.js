@@ -27,4 +27,14 @@ $(document).ready(function () {
     destination = $(elementClick).offset().top;
     $("body,html").animate({ scrollTop: destination }, 800);
   }); */
+  var coursesMob = new Swiper(".courses-mob", {
+    spaceBetween: 15,
+  });
+  var teacherMob = new Swiper(".teacher-mob", {
+    spaceBetween: 15,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });
