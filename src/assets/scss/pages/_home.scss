@@ -143,6 +143,10 @@
     }
 }
 .compare-mob{
+    display: none;
+    @include mobile{
+        display: block;
+    }
     h2{
         font-family: Montserrat;
         font-weight: 700;
@@ -389,6 +393,7 @@
                 background-color: #fff;
                 border-radius: 25px;
                 padding: 30px 40px;
+                position: relative;
                 .title{
                     display: flex;
                 
@@ -410,6 +415,7 @@
                         font-weight: 500;
                         font-size: 14px;
                         margin: 0;
+                        line-height: 1.2;
                     }
                 }
             }
@@ -429,7 +435,7 @@
             }
 
             .couse-price{
-                margin-top: 40px;
+                margin-top: 30px;
                 width: 100%;
                 border: 1px solid #FFFFFF;
                 box-sizing: border-box;
@@ -460,6 +466,23 @@
                 font-weight: 800;
                 font-size: 20px;
                 color: #000000;
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 288px;
+            }
+            .more-info{
+                font-weight: 500;
+                font-size: 13px;
+                text-align: center;
+                color: #FFFFFF;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 10px;
+                padding: 6px;
+                margin-top: 30px;
+
             }
         }
         .card-1{
@@ -520,6 +543,76 @@
             .back{
                 h3{
                     color: #8F6300;
+                }
+            }
+        }
+        .card-7{
+            .front{
+                background: linear-gradient(180deg, #1227C6 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            }
+            .back{
+                h3{
+                    color: #1227C6;
+                }
+            }
+        }
+        .card-8{
+            .front{
+                background: linear-gradient(180deg, #8D2400 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            }
+            .back{
+                h3{
+                    color: #8D2400;
+                }
+            }
+        }
+        .card-9{
+            .front{ 
+                background: linear-gradient(180deg, #129BBC 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            }
+            .back{
+                h3{
+                    color: #129ABC;
+                }
+            }
+        }
+        .card-10{
+            .front{ 
+                background: linear-gradient(180deg, #1945C2 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            }
+            .back{
+                h3{
+                    color: #1945C2;
+                }
+            }
+        }
+        .card-11{
+            .front{ 
+                background: linear-gradient(180deg, #2600CC 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            }
+            .back{
+                h3{
+                    color:#2600CC;
+                }
+            }
+        }
+        .card-12{
+            .front{ 
+                background: linear-gradient(180deg, #880019 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            }
+            .back{
+                h3{
+                    color: #880019;
+                }
+            }
+        }
+        .card-13{
+            .front{ 
+                background: linear-gradient(180deg, #2E96BC 33.34%, rgba(255, 255, 255, 0.52) 181.67%);
+            }
+            .back{
+                h3{
+                    color: #2E95BC;
                 }
             }
         }
@@ -860,6 +953,10 @@
         padding: 40px 0;
         overflow: hidden;
         position: relative;
+        display: none;
+        @include mobile{
+            display: block;
+        }
         .swiper-slide{
             background: none;
         }
@@ -923,6 +1020,9 @@
         margin: 250px auto 0;
         padding: 100px 0;
         position: relative;
+        @include mobile{
+            margin-top: 50px;
+        }
         .rew-bg{
             background: #FFFFFF;
             border-radius: 50px;
@@ -948,6 +1048,22 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 50px;
+            @include mobile{
+                width: 100%;
+                margin-bottom: 70px;
+            }
+            .card-img{
+                @include mobile{
+                    position: absolute;
+                    right: 0;
+                    bottom: -50px;
+                    width: 120px;
+                    z-index: 5;
+                }
+                img{
+                    width: 100%;
+                }
+            }
             .card-content{
                 width: 479px;
                 border: 2px solid #C4C4C4;
@@ -955,7 +1071,11 @@
                 border-radius: 20px;
                 padding: 44px;
                 background: #fff;
-
+                @include mobile{
+                    width: 100%;
+                    border: none;
+                    padding: 0;
+                }
                 .autor{
                     font-weight: 800;
                 }
@@ -992,6 +1112,12 @@
             color: #FFFFFF;
             text-transform: uppercase;
             width: 450px;
+            @include mobile{
+                margin: 0 auto 20px;
+                width: 80%;
+                font-weight: 800;
+                font-size: 15px;
+            }
         }
         input{
             margin-top: 50px;
@@ -1024,8 +1150,9 @@
         }
     }
 }
-.contact{
+.footer-contact{
     position: relative;
+    height: 1000px;
     .contact-card{
         background: #FFFFFF;
         border-radius: 41px;
@@ -1033,6 +1160,10 @@
         position: absolute;
         top: 140px;
         left: 10%;
+        @include mobile{
+            width: 80%;
+            padding: 60px 45px;
+        }
         h3{
             font-weight: 800;
             font-size: 24px;
