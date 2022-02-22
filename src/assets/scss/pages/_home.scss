@@ -53,6 +53,7 @@
         margin-bottom: 110px;
     }
     .compare-list{
+        text-align: center;
         position: relative;
         font-weight: 800;
         font-size: 18px;
@@ -68,6 +69,7 @@
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         margin-bottom: 130px;
+        line-height: 1;
     }
     .compare-text{
         padding: 24px 60px;
@@ -81,6 +83,10 @@
         h4{
             font-weight: 800;
             font-size: 16px;
+            margin-bottom: 0;
+            @include mobile{
+                margin-bottom: 0;
+            }
         }
         p{
             padding: 0;
@@ -170,7 +176,9 @@
         h4{
             font-weight: 800;
             font-size: 12px;
-            
+            @include mobile{
+                margin-bottom: 0;
+            }
         }
         p{
             padding: 0;
@@ -195,6 +203,8 @@
             }
         }
         .compare-list{
+            text-align: center;
+            position: relative;
             font-weight: 800;
             font-size: 10px;
             display: flex;
@@ -233,6 +243,8 @@
             }
         }
         .compare-list{
+            text-align: center;
+            position: relative;
             margin-right: 20px;
             font-weight: 800;
             font-size: 10px;
@@ -252,6 +264,61 @@
         h4{
             color: #40B5BB;
         }
+
+    }
+    .list-1::after{
+        content: url(/assets/images/list-1.svg);
+        display: inline-block;
+        top: -8px;
+        right: -85px;
+        position: absolute;
+        transform: scale(0.5);
+        z-index: 3;
+    }
+    .list-2::after{
+        content: url(/assets/images/list-2.svg);
+        display: inline-block;
+        top: 5px;
+        right: -48px;
+        position: absolute;
+        transform: scale(0.5);
+        z-index: 3;
+    }
+    .list-3::after{
+        content: url(/assets/images/list-3.svg);
+        display: inline-block;
+        top: -30px;
+        right: -80px;
+        position: absolute;
+        transform: scale(0.5);
+        z-index: 3;
+    }
+    .list-4::after{
+        content: url(/assets/images/list-4.svg);
+        display: inline-block;
+        top: -10px;
+        left: -80px;
+        position: absolute;
+        transform: scale(0.5);
+        z-index: 3;
+    }
+    .list-5::after{
+        content: url(/assets/images/list-5.svg);
+        display: inline-block;
+        top: 5px;
+        left: -50px;
+        position: absolute;
+        transform: scale(0.5);
+        z-index: 3;
+    }
+    .list-6::after{
+        content: url(/assets/images/list-61.svg);
+        display: inline-block;
+        top: -30px;
+        left: -72px;
+        position: absolute;
+        transform: scale(0.5);
+        z-index: 3;
     }
 }
 .main{
@@ -298,7 +365,13 @@
             }
         }
         .about-info{
-            width: 470px;
+            width: 450px;
+            h2{
+                margin-bottom: 55px;
+                @include mobile{
+                    margin-bottom: 40px;
+                }
+            }
             @include mobile{
                 width: 100%;
                 padding: 0 25px 60px;
@@ -310,6 +383,7 @@
             font-weight: 500;
             font-size: 20px;
             color: #1C1A1A;
+            margin-bottom: 50px;
             @include mobile{
                 font-size: 13px;
             }
@@ -318,6 +392,7 @@
             font-weight: 800;
             font-size: 30px;
             color: #4B23BD;
+
             @include mobile{
                 font-size: 16px;
                 text-align: center;
@@ -331,7 +406,7 @@
         
     }
     .advantage{
-        margin-top: 180px;
+        margin-top: 120px;
         h2{
             text-align: center;
             @include mobile{
@@ -471,7 +546,7 @@
                 box-sizing: border-box;
                 border-radius: 10px;
                 text-align: center;
-                padding: 13px;
+                padding: 13px 0 20px;
                 p{
                     padding: 0;
                     margin: 0;
@@ -482,13 +557,15 @@
                     font-size: 33px;
                 }
                 .currency{
+                    position: relative;
+                    margin-top: -10px;
                     font-size: 13px;
                 }
             }
             a{
                 margin-top: 20px;
+                padding: 3px 0 7px;
                 text-align: center;
-                width: 100%;
                 display: block;
                 background: #ECE9E9;
                 border: 1px solid #FFFFFF;
@@ -500,7 +577,7 @@
                 bottom: 30px;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 288px;
+                width: 300px;
             }
             .more-info{
                 font-weight: 500;
@@ -876,7 +953,7 @@
             width: 100%;
             height: 1130px;
             position: absolute;
-            top: -60px;
+            top: -90px;
             left: 0;
             z-index: 0;
         }
@@ -901,14 +978,15 @@
             width: 400px;
             margin-top: 50px;
             margin-left: 100px;
+            position: relative;
             @include mobile{
                 display: none;
             }
             &::before{
                 content: url(/assets/images/card-dot.svg);
                 position: absolute;
-                top: 10px;
-                left: 20px;
+                top: -70px;
+                left: -60px;
             }
             p{
                 margin-left: 150px;
@@ -957,27 +1035,23 @@
             content: url(/assets/images/tc-bg2.svg);
             position: absolute;
             top: -150px;
-            left: -140px;
+            left: -170px;
             z-index: 1;
             transform: scale(1.1);
-        }
-        .teacher-slogan-lt{
-            p{
-                &::before{
-                    content: url(/assets/images/card-dot.svg);
-                    position: absolute;
-                    top: 110px;
-                    left: 20px;
-                }
-            }
         }
         .teacher-card-3::after {
             content: url(/assets/images/tc-bg3.svg);
             position: absolute;
-            top: -50px;
+            top: -30px;
             left: -140px;
             z-index: 1;
             transform: scale(1.1);
+        }
+        .teacher-card-3{
+            p{
+                line-height: 1.3;
+                margin-left: 30px;
+            }
         }
         .teacher-card-5::after{
             content: url(/assets/images/tc-bg5.svg);
@@ -1074,7 +1148,8 @@
         }
         .rew-bg{
             background: #FFFFFF;
-            border-radius: 50px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
             width: 856px;
             height: 100%;
             position: absolute;
@@ -1105,7 +1180,7 @@
                 @include mobile{
                     position: absolute;
                     right: 0;
-                    bottom: -120px;
+                    bottom: -130px;
                     width: 190px;
                     z-index: 5;
                     right: -70px;
@@ -1128,6 +1203,7 @@
                 }
                 .autor{
                     font-weight: 800;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -1148,7 +1224,7 @@
     }
     form{
         margin: 0 auto;
-        padding: 70px 160px 90px;
+        padding: 70px 100px 90px;
         width: 700px;
         border-radius: 50px;
         background: rgba(255, 255, 255, 0.15);
@@ -1163,6 +1239,7 @@
             font-weight: 800;
             font-size: 30px;
             text-align: center;
+            margin: 0 auto;
             color: #FFFFFF;
             text-transform: uppercase;
             width: 450px;
@@ -1216,7 +1293,7 @@
     .contact-card{
         background: #FFFFFF;
         border-radius: 41px;
-        padding: 95px 105px;
+        padding: 95px 105px 30px;
         position: absolute;
         top: 140px;
         left: 10%;

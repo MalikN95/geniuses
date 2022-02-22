@@ -11,23 +11,26 @@
         padding: 85px 0 120px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @include mobile{
             display: none;
         }
         .logo{
             width: 300px;
+            margin-left: -16px;
         }
         .contact{
             display: flex;
             width: 530px;
             justify-content: space-between;
+            align-items: center;
             a{
                 font-size: 25px;
                 font-weight: 500;
                 color: #4B23BD;
             }
             img{
-                width: 40px;
+                width: 55px;
                 transition: .3s;
                 &:hover{
                     transform: scale(1.1);
@@ -43,20 +46,33 @@
             padding-bottom: 50px;
         }
         .wrapper-text{
-            padding: 20px 0 0 80px;
+            padding: 20px 0 0 50px;
             width: 50%;
             @include mobile{
                 width: 100%;
+                padding: 20px 0 0 60px;
                 
             }
             h1{
                 font-weight: 800;
                 font-size: 60px;
-                color: #082E9B;               
+                color: #082E9B;  
+                position: relative;             
                 @include mobile{
                     font-size: 35px;
                     transform: translateX(-50px);
                     width: 280px;
+                }
+                &::after{
+                    content: url(/assets/images/wrapper-bg2.svg);
+                    position: absolute;
+                    left: -180px;
+                    top: 30px;
+                    @include mobile{
+                        top: -20px;
+                        left: -150px;
+                        transform: scale(0.65);
+                    }
                 }
             }
             .list{
@@ -68,6 +84,9 @@
                 }
                 li{
                     position: relative;
+                    @include mobile{
+                        left: -15px;
+                    }
                     &::before{
                         position: absolute;
                         top: -15px;
@@ -76,6 +95,10 @@
                         color: red;                    display: inline-block; 
                         margin-left: -1em;
                         font-size: 50px;
+                        @include mobile{
+                            top: -25px;
+                            left: 10px;
+                        }
                     }
                 }
                 .orange::before{
@@ -207,14 +230,13 @@
     top: 8px;
   }
   .menu__box {
-    display: block;
     position: fixed;
     visibility: hidden;
     top: 90px;
     right: -100%;
     width: 60%;
     margin: 0;
-    padding: 40px 20px;
+    padding: 45px 0 45px 30px;
     list-style: none;
     background: #fff;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
@@ -223,13 +245,10 @@
   }
   .menu__item {
     display: block;
-    padding: 5px 24px;
+    padding: 5px 0px;
     color: #082E9B;
     font-weight: 500;
     font-size: 16px;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
   }
 #menu__toggle{
     opacity: 0;
@@ -247,6 +266,7 @@
     transform: rotate(90deg);
   }
   #menu__toggle:checked ~ .menu__box {
+    position: absolute;
     visibility: visible;
     right: 5%;
   }

@@ -37,4 +37,13 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+  document.querySelector('.menu__box').onclick = function(){
+    document.querySelector('#menu__toggle').checked = false
+  }
+  document.querySelector('.wrapper, main').onclick = function(){
+    document.querySelector('#menu__toggle').checked = false
+  }
+  document.querySelector('#menu__toggle').onclick = function(){
+    document.querySelector('.menu__box').style.visibility = 'visible'
+  }
 });
